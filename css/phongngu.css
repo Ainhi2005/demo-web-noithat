@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  padding: 20px;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+}
+.sanpham {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding-top: 5%;
+}
+
+h1,
+h3 {
+  text-align: center;
+  line-height: 50px;
+}
+.hinhanhdau {
+  padding-top: 2%;
+  width: 80%;
+  height: 600px;
+  margin: auto;
+  overflow: hidden;
+}
+.hinhanhdau img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 2%;
+}
+.card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  object-fit: cover;
+  height: auto;
+}
+
+.card .details {
+  padding: 15px;
+}
+
+.card .details h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.card .details .price {
+  font-size: 14px;
+  color: #e74c3c;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card .details .discount {
+  font-size: 12px;
+  color: #27ae60;
+  margin-bottom: 10px;
+}
+
+.card .details button {
+  display: inline-block;
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.card .details button:hover {
+  background-color: #0056b3;
+}
